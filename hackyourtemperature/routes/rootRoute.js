@@ -1,10 +1,8 @@
 import express from 'express';
 
 const router = express.Router();
-
 router.get('/', (req, res) => {
-  console.log('hello world!');
-  res.send('Hello World!');
+  res.send('Hello from backend to frontend!');
 });
 
 export default router;

@@ -4,7 +4,7 @@ import { openWeatherData } from '../api/externalApiCalls.js';
 
 const router = express.Router();
 
-router.get('/weather', (req, res) => {
+router.post('/weather', (req, res) => {
   const { cityName } = req.body;
   if (!cityName) {
     return res.status(400).send('City is required');
