@@ -18,3 +18,5 @@ app.use(deletePost);
 app.use(updatePost);
 
 app.listen(3000);
+
+app.use(express.json());
